@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPO-CHICHI Miguel | Site Vitrine Coaching</title>
+  <meta name="description" content="Portail des versions du site vitrine de coaching en développement personnel par Miguel CAPO-CHICHI.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #0A0E17;
+      color: #F8FAFC;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    .portal-card {
+      background: rgba(26, 34, 52, 0.7);
+      border: 1px solid rgba(230, 198, 135, 0.2);
+      border-radius: 24px;
+      padding: 50px 40px;
+      max-width: 720px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    .brand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #E6C687;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .brand-subtitle {
+      color: #94A3B8;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    .option-box {
+      background: rgba(18, 24, 38, 0.9);
+      border: 1px solid rgba(230, 198, 135, 0.15);
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-decoration: none;
+      color: #F8FAFC;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .option-box:hover {
+      border-color: #E6C687;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(230, 198, 135, 0.15);
+    }
+    .option-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #E6C687;
+      margin-bottom: 10px;
+    }
+    .option-desc {
+      font-size: 0.9rem;
+      color: #94A3B8;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .btn-action {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #E6C687 0%, #C49B48 100%);
+      color: #0F172A;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .footer-note {
+      font-size: 0.85rem;
+      color: #64748B;
+      margin-top: 15px;
+    }
+    @media (max-width: 600px) {
+      .options-grid { grid-template-columns: 1fr; }
+      .portal-card { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portal-card">
+    <div class="brand-title">CAPO-CHICHI MIGUEL</div>
+    <div class="brand-subtitle">Coaching en Développement Personnel & Transformation</div>
+
+    <div class="options-grid">
+      <a href="./interactive/" class="option-box">
+        <div>
+          <div class="option-title">Version Interactive</div>
+          <div class="option-desc">Déclinée avec JavaScript, animations fluides, filtre de packs et modales dynamiques.</div>
+        </div>
+        <div>
+          <span class="btn-action">Ouvrir le site</span>
+        </div>
+      </a>
+
+      <a href="./classique/" class="option-box">
+        <div>
+          <div class="option-title">Version Classique</div>
+          <div class="option-desc">100% Pure HTML5 & CSS3, autonome sans aucun script client.</div>
+        </div>
+        <div>
+          <span class="btn-action">Ouvrir le site</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="footer-note">
+      Sélectionnez la version que vous souhaitez présenter.
+    </div>
+  </div>
+
+</body>
+</html>
