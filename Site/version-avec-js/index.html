@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPO-CHICHI Miguel | Coaching en Développement Personnel</title>
+  <meta name="description" content="Débloquez votre potentiel, dépassez vos blocages et retrouvez du sens avec l'accompagnement individuel de Miguel CAPO-CHICHI.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <span>MIGUEL</span> CAPO-CHICHI
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#philosophie">Philosophie</a></li>
+        <li><a href="#benefices">Bénéfices</a></li>
+        <li><a href="#packs">Packs & Tarifs</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <button class="btn btn-primary" onclick="openContactModal('Pack Découverte (0 €)')" style="padding: 10px 20px; font-size: 0.85rem;">
+            Diagnostic Offert
+          </button>
+        </li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu principal">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">✨ Coaching & Mentorat de Vie</div>
+        <h1>Libérez Votre Potentiel et <span class="text-gold">Transformez Vos Blocages</span> en Alignement</h1>
+        <p class="hero-subtitle">
+          Stagnation, doutes ou perte de repères ? Ensembles, clarifions votre vision, levons vos freins inconscients et construisez une vie alignée sur vos véritables aspirations.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openContactModal('Pack Découverte (0 €)')">
+            Réserver ma Session Diagnostic (0 €)
+          </button>
+          <a href="#packs" class="btn btn-outline">Découvrir les Accompagnements</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>30 min</h3>
+            <p>Diagnostic Offert</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Sur-mesure & Confidentialité</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9/5</h3>
+            <p>Satisfaction Clients</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="images/miguel_hero.jpg" alt="Miguel CAPO-CHICHI - Coach en développement personnel">
+        <div class="hero-card-overlay">
+          <div class="hero-card-name">CAPO-CHICHI Miguel</div>
+          <div class="hero-card-title">Expert en Développement Personnel & Énergie</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & PARCOURS (PHOTO 2: GIVENCHY & SACOCHE) -->
+  <section class="section" id="about" style="background: rgba(18, 24, 38, 0.4);">
+    <div class="container about-grid">
+      <div class="photo-card">
+        <img src="images/miguel_apropos.jpg" alt="Miguel CAPO-CHICHI en déplacement professionnel">
+      </div>
+      <div>
+        <div class="badge">Mon Parcours</div>
+        <h2 style="font-size: 2.3rem; margin: 15px 0 20px;">Un accompagnement concret, tourné vers l'action</h2>
+        <p style="color: var(--text-muted); margin-bottom: 15px;">
+          Chaque individu possède en lui les clés de sa propre réussite, mais des doutes inconscients et des habitudes stagnantes bloquent souvent le passage à l'action.
+        </p>
+        <p style="color: var(--text-muted); margin-bottom: 25px;">
+          Mon objectif est de vous apporter une méthode claire, structurée et immédiatement applicable pour débloquer votre situation personnelle et professionnelle avec pragmatisme.
+        </p>
+        <button class="btn btn-outline" onclick="openContactModal('Pack Découverte (0 €)')">
+          Échanger avec Miguel
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHIE & ÉNERGIE (PHOTO 3: TUNIQUE JAUNE) -->
+  <section class="section" id="philosophie">
+    <div class="container about-grid">
+      <div>
+        <div class="badge">Philosophie & Profiling</div>
+        <h2 style="font-size: 2.3rem; margin: 15px 0 20px;">Allier psychologie, stratégie et bilan énergétique</h2>
+        <p style="color: var(--text-muted); margin-bottom: 15px;">
+          Pour une métamorphose durable, il ne suffit pas de traiter les symptômes superficiels. Il est essentiel d'aligner votre mental, vos émotions et votre énergie globale.
+        </p>
+        <p style="color: var(--text-muted); margin-bottom: 25px;">
+          Dans les programmes d'accompagnement approfondis, nous réalisons un profil énergétique complet pour vous redonner un élan vital durable et un apaisement intérieur garanti.
+        </p>
+        <a href="#packs" class="btn btn-primary">Voir la formule Métamorphose</a>
+      </div>
+      <div class="photo-card">
+        <img src="images/miguel_philosophie.jpg" alt="Miguel CAPO-CHICHI profil énergétique">
+      </div>
+    </div>
+  </section>
+
+  <!-- BÉNÉFICES ÉMOTIONNELS -->
+  <section class="section" id="benefices" style="background: rgba(18, 24, 38, 0.5);">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge">Ce que vous allez ressentir</div>
+        <h2>Bénéfices de l'Accompagnement</h2>
+        <p style="color: var(--text-muted);">Au-delà de la théorie, voici ce que vous gagnez concrètement après nos séances.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🧠</div>
+          <h3>Clarté Mentale Absolue</h3>
+          <p>Fini la confusion et la rumination. Vous retrouvez une vision limpide de vos priorités et de vos choix de vie.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🔓</div>
+          <h3>Libération des Blocages</h3>
+          <p>Identification immédiate des croyances limitantes et des peurs qui freinent votre progression.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h3>Confiance & Élan Vital</h3>
+          <p>Reconnexion à votre valeur personnelle pour décider avec assurance et passer sereinement à l'action.</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">🌿</div>
+          <h3>Sérénité & Alignement</h3>
+          <p>Un apaisement intérieur durable grâce à une meilleure gestion du stress et un rééquilibrage de votre énergie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKS & PRICING -->
+  <section class="section" id="packs">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge">Transparence & Engagement</div>
+        <h2>Nos Packs d'Accompagnement</h2>
+        <p style="color: var(--text-muted);">Choisissez la formule adaptée à votre objectif et votre rythme.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="pricing-filter">
+        <button class="filter-btn active" data-filter="all">Toutes les formules</button>
+        <button class="filter-btn" data-filter="decouverte">Découverte & Unique</button>
+        <button class="filter-btn" data-filter="accompagnement">Suivi & Élite</button>
+      </div>
+
+      <div class="packs-grid">
+        
+        <!-- PACK 1: DÉCOUVERTE -->
+        <div class="pack-card" data-category="decouverte">
+          <div>
+            <span class="badge badge-free">Diagnostic Initial</span>
+            <div class="pack-header">
+              <h3 class="pack-title">Pack Découverte</h3>
+              <div class="pack-objective">Attirer le client & instaurer la confiance</div>
+            </div>
+            <div class="pack-price">
+              0 € <span>(Gratuit)</span>
+            </div>
+            <ul class="pack-features">
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                1 Session diagnostic de 30 min
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Analyse de votre questionnaire initial
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Identification du blocage principal
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" onclick="openContactModal('Pack Découverte (0 €)')">
+            Réserver ma session (0 €)
+          </button>
+        </div>
+
+        <!-- PACK 2: CLARTÉ -->
+        <div class="pack-card" data-category="decouverte">
+          <div>
+            <span class="badge">Session Unique</span>
+            <div class="pack-header">
+              <h3 class="pack-title">Pack Clarté</h3>
+              <div class="pack-objective">Débloquer une situation précise immédiatement</div>
+            </div>
+            <div class="pack-price">
+              80 € à 100 €
+            </div>
+            <ul class="pack-features">
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                1 Séance intensive de coaching (1h15)
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                1 Plan d'action écrit personnalisé
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Suivi par message (WhatsApp/Email) 48h
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" onclick="openContactModal('Pack Clarté (80€-100€)')">
+            Réserver cette séance
+          </button>
+        </div>
+
+        <!-- PACK 3: ALIGNEMENT -->
+        <div class="pack-card featured" data-category="accompagnement">
+          <div class="featured-ribbon">Recommandé</div>
+          <div>
+            <span class="badge">Accompagnement 1 mois</span>
+            <div class="pack-header">
+              <h3 class="pack-title">Pack Alignement</h3>
+              <div class="pack-objective">Initier une transformation et un suivi régulier</div>
+            </div>
+            <div class="pack-price">
+              250 € <span>/ mois</span>
+            </div>
+            <ul class="pack-features">
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                3 Séances de coaching (1h chacune)
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Exercices pratiques entre les sessions
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Support audio direct (Vocal) 5j/7
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-primary" style="width: 100%;" onclick="openContactModal('Pack Alignement (250€)')">
+            Rejoindre le programme
+          </button>
+        </div>
+
+        <!-- PACK 4: MÉTAMORPHOSE -->
+        <div class="pack-card" data-category="accompagnement">
+          <div>
+            <span class="badge">Accompagnement Élite</span>
+            <div class="pack-header">
+              <h3 class="pack-title">Pack Métamorphose</h3>
+              <div class="pack-objective">Transformation profonde et globale sur 2 à 3 mois</div>
+            </div>
+            <div class="pack-price">
+              490 € à 500 €
+            </div>
+            <ul class="pack-features">
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                6 Séances de coaching individuelles
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Profil métaphysique / énergétique complet
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Accès aux outils de méditation guidée
+              </li>
+              <li>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                Suivi prioritaire continu
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%;" onclick="openContactModal('Pack Métamorphose (490€-500€)')">
+            Postuler à l'Élite
+          </button>
+        </div>
+
+      </div>
+
+      <!-- DIAGNOSTIC BANNER -->
+      <div class="diagnostic-banner">
+        <div class="diagnostic-content">
+          <h3>Prêt à débuter avec le Diagnostic Offert (0 €) ?</h3>
+          <p>Bénéficiez de 30 minutes d'échange individuel avec Miguel pour analyser votre situation et cibler votre blocage principal.</p>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="openContactModal('Pack Découverte (0 €)')">
+            Contacter Miguel Directement
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background: rgba(18, 24, 38, 0.5);">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge">Information</div>
+        <h2>Foire Aux Questions</h2>
+        <p style="color: var(--text-muted);">Tout ce qu'il faut savoir avant de réserver votre créneau.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            Comment se déroule la séance diagnostic du Pack Découverte (0 €) ?
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="faq-answer">
+            Lors de notre entretien de 30 minutes (par téléphone ou visioconférence), nous faisons un état des lieux de vos défis actuels afin de poser un diagnostic clair et de définir le parcours de transformation adapté.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Quelles sont les modalités de règlement des accompagnements ?
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="faq-answer">
+            Pour les formules sur plusieurs mois (Alignement & Métamorphose), des facilités de paiement en 2 ou 3 mensualités sont proposées pour s'adapter à votre budget.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Comment se passe le suivi WhatsApp / vocal entre les séances ?
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="faq-answer">
+            Vous disposez d'un canal direct 5j/7 pour partager vos blocages immédiats, valider vos exercices ou recevoir des retours vocaux personnalisés entre deux séances de coaching.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL CONTACT DIRECT -->
+  <div class="modal-backdrop" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3 id="modalTitle" style="font-size: 1.6rem; margin-bottom: 8px;">Contact Direct & Réservation</h3>
+      <p id="modalSubtitle" style="color: var(--text-muted); font-size: 0.9rem;">Sélectionnez votre moyen de contact préféré.</p>
+
+      <div class="contact-methods">
+        <a href="https://wa.me/?text=Bonjour%20Miguel,%20je%20souhaite%20r%C3%A9server%20un%20cr%C3%A9neau%20avec%20vous." id="modalWhatsappLink" target="_blank" class="contact-method-card">
+          <div class="contact-method-icon" style="background: rgba(37, 211, 102, 0.2); color: #25D366;">💬</div>
+          <div>
+            <div style="font-weight: 700;">WhatsApp Direct</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Réponse rapide sous 2h à 4h</div>
+          </div>
+        </a>
+
+        <a href="mailto:contact@miguel-coaching.com" class="contact-method-card">
+          <div class="contact-method-icon" style="background: rgba(230, 198, 135, 0.2); color: var(--gold-primary);">✉️</div>
+          <div>
+            <div style="font-weight: 700;">Envoyer un Email</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">contact@miguel-coaching.com</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><span>MIGUEL</span> CAPO-CHICHI</a>
+          <p>Accompagnement individuel et transformation personnelle. Révélez vos forces intérieures et libérez vos blocages.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#philosophie">Philosophie</a></li>
+            <li><a href="#benefices">Bénéfices</a></li>
+            <li><a href="#packs">Packs & Tarifs</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contact Coach</h4>
+          <ul>
+            <li><a href="https://wa.me/" target="_blank">💬 WhatsApp Direct</a></li>
+            <li><a href="mailto:contact@miguel-coaching.com">✉️ Email Direct</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 CAPO-CHICHI Miguel. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
