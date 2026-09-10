@@ -127,7 +127,7 @@ h1, h2, h3, h4, .brand-font {
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   font-weight: 700;
   color: var(--forest-green);
   text-decoration: none;
@@ -379,6 +379,22 @@ h1, h2, h3, h4, .brand-font {
   color: var(--forest-green);
   margin: 15px 0;
   font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.price-strikethrough {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  opacity: 0.6;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.price-current {
+  color: var(--terracotta);
+  font-weight: 700;
 }
 
 .pack-features {
